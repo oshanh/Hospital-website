@@ -1,0 +1,93 @@
+
+
+		
+		#main,#surgeon,#pysician,#neurologist,#card{
+			border:none;
+			box-shadow:10px 10px 10px rgba(255, 0, 0, 0.403);
+			border-radius:10px;
+			height:320px;
+			width:200px;
+			margin-bottom: 40px;
+			margin-right:20px;
+			margin-left:30px;
+			/*background-color:rgba(255,255,25,0.5);*/
+			background-image:linear-gradient(to bottom right,#9796F0,#FBC7D4);
+
+			
+		}
+
+		#main1{
+			border:none;
+			box-shadow:10px 10px 10px rgba(255, 0, 0, 0.403);
+			border-radius:10px;
+			height:320px;
+			width:200px;
+			margin-bottom: 40px;
+			margin-right:20px;
+			margin-left:30px;
+			/*background-color:rgba(255,255,25,0.5);*/
+			background-image:linear-gradient(to bottom right,#9796F0,#FBC7D4);
+
+			
+		}
+
+		#second{
+			border:px solid blue;
+			text-align: center;
+			
+		}
+		#i{
+			width:100px;
+			height:100px;
+			border:2px solid black;
+			border-radius:98%;
+			margin:auto;
+			margin-left:50px;
+			margin-top:30px;
+		}
+		#b1{
+			background-color:#0E59DA;
+			text-align: center;
+			color: aliceblue;
+			margin-left: 63px;
+            cursor:pointer;
+		}
+		#b2{
+			background-color:whitesmoke;
+			text-align: center;
+			color: #0E59DA;
+			margin-left: 55px;
+            cursor:pointer;
+		}
+        
+		.cont{
+			/*margin-left:75px;
+			margin-right: 75px;
+			margin-top:50px;*/
+			margin:75px;
+            margin-left:105px;
+			padding:auto;
+			box-shadow: #0E59DA;
+			display:flex;
+			flex-wrap:wrap;
+			margin-top:25px;
+			
+			
+		}
+		
+		.profile{
+			margin-left:230px;
+			margin-top:0px;
+		}
+		
+
+		
+		body{
+			/*background-image:linear-gradient(to right,#1c1c1d,#0c055a);*/
+            display:flex;
+			flex-wrap:wrap;
+		}	
+	section{
+		display:flex;
+			flex-wrap:wrap;
+	}

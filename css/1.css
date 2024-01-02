@@ -1,0 +1,83 @@
+.container2{
+    position:absolute;
+    z-index:700;
+    top:25px;
+    animation:loading 7s infinite;
+    animation-fill-mode: forwards;
+    
+
+}
+.b1{
+    animation:loadingb 5s infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 0.7s;
+}
+
+.b2{
+    animation:loadingb 5s infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 0.6s;
+}
+
+.b3{
+    animation:loadingb 5s infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+}
+
+.b4{
+    animation:loadingb 5s infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+.b5{
+    background-color:red;
+    animation:loadingb 5s infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 0.1s;
+}
+.ball{
+    background-color:red;
+    display:inline-block;
+    width:25px;
+    height:25px;
+    border:1px solid red;
+    border-radius:50%;
+    /*animation:loadingb 7s infinite;
+    animation-fill-mode: forwards;*/
+    
+}
+
+@keyframes loadingb{
+    0%{
+        transform:translateX(0);
+        scale:1;
+    }
+    50%{
+        transform:translateX(2800%);
+        scale:1;
+        
+    }
+    
+    100%{
+        transform:translateX(6700%);
+        scale:1;
+    }
+}
+/*@keyframes loadingb{    
+    0%{
+        transform:translateX(0);
+        width:5px;
+        height:5px;
+    }
+    50%{
+        transform:translateX(500%);
+        width:25px;
+        height:25px;
+    }
+    100%{
+        transform:translateX(1200%);
+        width:5px;
+        height:5px;
+    }
+}*/

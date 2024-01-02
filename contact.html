@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us | YouHeal Hospital</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	
+		
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+			background-color: #f9f9f9;
+			color: #ff0000;
+		}
+
+		h1, h2 {
+			font-weight: normal;
+			text-align: center;
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+			color: #00509e;
+		}
+
+		p {
+			margin: 1rem;
+			text-align: center;
+		}
+
+		label {
+			display: block;
+			margin-top: 1rem;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="tel"],
+		textarea {
+			display: block;
+			margin: 0.5rem auto;
+			padding: 0.5rem;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			width: 80%;
+			max-width: 400px;
+		}
+
+		input[type="submit"] {
+			display: block;
+			margin: 1rem auto;
+			padding: 0.5rem 1rem;
+			background-color: #00509e;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #002b5e;
+		}
+
+		@media screen and (min-width: 768px) {
+			
+			h1 {
+				font-size: 3rem;
+			}
+
+			h2 {
+				font-size: 2rem;
+			}
+
+			p {
+				font-size: 1.2rem;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			input[type="tel"],
+			textarea {
+				display: block;
+			margin: 0.5rem auto;
+			padding: 0.5rem;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			width: 80%;
+			max-width: 400px;
+			}
+
+            input[type="submit"] {
+			display: block;
+			margin: 1rem auto;
+			padding: 0.5rem 1rem;
+			background-color: #00509e;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #002b5e;
+		}
+
+		@media screen and (min-width: 768px) {
+			/* Styles for screens wider than 768px */
+			h1 {
+				font-size: 3rem;
+			}
+
+			h2 {
+				font-size: 2rem;
+			}
+
+        
+        p {
+				font-size: 1.2rem;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			input[type="tel"],
+			textarea {
+				width: 60%;
+			}
+        }
+		}
+        label{
+            margin-left:700px;
+        }
+
+
+	</style>
+<!--Default-->
+<link rel="icon" type="image/x-icon" href="img/fav.png">
+<link rel="stylesheet" type="text/css" href="css/header_footer.css"/>
+<!--Default-->
+
+<link rel="stylesheet" href="css/index.css"/>
+
+
+</head>
+
+<body>
+<!--Header Start-->
+<div class="header">    
+    <div class="logo"><a href="index.html"><img class="logo" src="img/logo.jpg"/></a>
+    </div>
+    
+    <ul>
+        <li class="dropdown"> <a href="login.html">User</a>  
+            <div class="dropdown-content dcl">
+                <a href="Login.html">Login</a>
+                <a href="Register.html">Register</a>
+            
+            </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown"><a href="about.html">About Us</a>
+            <div class="dropdown-content">
+                <a href="centers.html">Our Centers</a>
+                <!--<a href="Locations.html">Locations</a>
+                <a href="awards.html">Awards</a>
+                <a href="annual.html">Annual Reports</a>-->
+            </div>
+        </li>  
+
+
+
+        <li><a href="comments.html">Comments</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li class="dropdown"><a href="">Services</a>
+            <div class="dropdown-content">
+                <a href="packages.html">Packages</a>
+                <a href="LabTests.html">Lab Tests</a>
+            </div>
+        </li>  
+
+        <li class="dropdown"><a>Meet <span id="drpdwn" onclick="drp()">>></span></a>
+            <div class="dropdown-content" id="dropdown-content"  >
+                    <a href="eChanelling.html">eChanelling</a>
+                    <a href="Doctor.html">Doctors</a>
+            </div>
+        </li>  
+		<li class="dropdown"><a href="">Check</a>
+            <div class="dropdown-content">
+                <a href="guess.html">How Healthy </a>
+                <a href="bmi.html">BMI</a>
+            </div>
+        </li> 
+        <li> <a href="index.html">Home</a>  </li>
+        
+        
+    </ul>
+</div>    
+<!--Header End-->
+
+
+	<h1>Contact Us</h1>
+	<p>Thank you for visiting our website. If you have any questions or comments, please feel free to get in touch with us using the information below.</p>
+	<p>YouHeal Hospital<br>
+	Address: Colombo 9A Street, Galle Road, Colombo 7.<br>
+	Phone: +94112546890<br>
+	Fax: +94112546891<br>
+	Email: info@youhealhospital.com</p>
+
+	<h2>Directions</h2>
+	<p>For directions to our hospital, please see the map</p>
+	<!-- insert your map code or embed your Google Maps link here -->
+
+	<h2>Contact Form</h2>
+	<p>You can also send us a message using the form below. Please allow 24-48 hours for a response.</p>
+	<form method="POST" action="submit.php">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br>
+
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone"><br>
+
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" required></textarea><br>
+
+		<input type="submit" value="Submit">
+	</form>
+
+	<h2>Emergency Contacts</h2>
+	<p>If you have a medical emergency, please call 1799 or go to your nearest emergency room.</p>
+	<p>If you have questions about our services, billing, or anything else, please don't hesitate to reach out to us. We look forward to hearing from you!</p>
+
+<!--Footer-->
+<footer>
+    <div class="footer">
+
+
+
+    <div class="qlinks"> 
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="echannelling.html">eChanelling </a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="Login.html">Login </a>
+        <a href="Register.html">Register</a>
+        <a href="doctor.html">Doctors</a><br>
+        <a href="packages.html"> Packages</a>
+        <a href="LabTests.html"> LabTests</a>
+        <a href="comments.html"> Comments</a>
+        <a href="centers.html"> Centers</a>
+        
+        <br>
+    </div>
+    <div class="copyright">
+            @YouHeal Hospitals 2023
+    </div>
+    </div>
+</footer>
+<!--Footer End-->
+
+</body>
+</html>

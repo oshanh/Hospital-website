@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title> Comments   </title>
+        <link rel="stylesheet" type="text/css" href="css/comments.css"/>
+<!--Default-->
+<link rel="icon" type="image/x-icon" href="img/fav.png">
+<link rel="stylesheet" type="text/css" href="css/header_footer.css"/>
+<!--Default-->
+</head>
+
+<body>
+
+<!--Header Start-->
+<div class="header">    
+    <div class="logo"><a href="index.html"><img class="logo" src="img/logo.jpg"/></a>
+    </div>
+    
+    <ul>
+        <li class="dropdown"> <a href="login.html">User</a>  
+            <div class="dropdown-content dcl">
+                <a href="Login.html">Login</a>
+                <a href="Register.html">Register</a>
+            
+            </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown"><a href="about.html">About Us</a>
+            <div class="dropdown-content">
+                <a href="centers.html">Our Centers</a>
+                <!--<a href="Locations.html">Locations</a>
+                <a href="awards.html">Awards</a>
+                <a href="annual.html">Annual Reports</a>-->
+            </div>
+        </li>  
+
+
+
+        <li><a href="comments.html">Comments</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li class="dropdown"><a href="">Services</a>
+            <div class="dropdown-content">
+                <a href="packages.html">Packages</a>
+                <a href="LabTests.html">Lab Tests</a>
+            </div>
+        </li>  
+
+        <li class="dropdown"><a>Meet <span id="drpdwn" onclick="drp()">>></span></a>
+            <div class="dropdown-content" id="dropdown-content"  >
+                    <a href="eChanelling.html">eChanelling</a>
+                    <a href="Doctor.html">Doctors</a>
+            </div>
+        </li>  
+        <li class="dropdown"><a href="">Check</a>
+            <div class="dropdown-content">
+                <a href="guess.html">How Healthy </a>
+                <a href="bmi.html">BMI</a>
+            </div>
+        </li> 
+        <li> <a href="index.html">Home</a>  </li>
+        
+        
+    </ul>
+</div>    
+<!--Header End-->
+
+<div class="container">
+    <p style="font-size: 30px; color:red;text-align: center;">CUSTOMERS' COMMENTS</p>
+    <p style="font-size: 20px; color:rgb(233, 233, 233);text-align: left;">How do you feel about our service?</p>
+    <form>
+    <input type="radio" id="fb" name="fb" value="Very Good">
+    <label for="Very Good">Very Good</label>
+    <br>
+    <input type="radio" id= "fb" name="fb" value="Good">
+    <label for="Good">Good</label>
+    <br>
+    <input type="radio" id="fb" name="fb" value="Not Bad">
+    <label for="Not Bad">Not Bad</label>
+    <br>
+    <input type="radio" id="fb" name="fb" value="Bad">
+    <label for="Bad">Bad</label>
+    <br>
+    
+    
+
+    <p style="font-size: 20px; color:rgb(255, 255, 255);"> YOUR COMMENTS</p>
+   
+
+    <div class="comment-input">
+        <input type='text' id='myInput'  /> <br><br> 
+        <input type='submit' onclick='doChange()' value='Comment' /> 
+        </div>
+        
+        <div class="comment-section" id="a">
+            <p>  
+                
+            </p> 
+   
+    
+        </div>
+</div>
+        <script type="text/javascript">  
+            function doChange() {  
+            // var myInput = document.getElementById('my').innerHTML; 
+               // var fed=documnet.getElementById('fb').value;
+                var myInput = document.getElementById('myInput').value; 
+                var exist = document.getElementById('a').innerHTML; 
+                document.getElementById('a').innerHTML =exist+"<p>"+myInput+"</p>";
+                //document.getElementById('myInput').value='';    
+            }  
+        </script>  
+</body>
+    </form>
+
+
+
+<!--Footer-->
+<footer>
+    <div class="footer">
+
+
+
+    <div class="qlinks"> 
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="echannelling.html">eChanelling </a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="Login.html">Login </a>
+        <a href="Register.html">Register</a>
+        <a href="doctor.html">Doctors</a><br>
+        <a href="packages.html"> Packages</a>
+        <a href="LabTests.html"> LabTests</a>
+        <a href="comments.html"> Comments</a>
+        <a href="centers.html"> Centers</a>
+        
+        <br>
+    </div>
+    <div class="copyright">
+            @YouHeal Hospitals 2023
+    </div>
+    </div>
+</footer>
+<!--Footer End-->
+</body>
+
+</html>

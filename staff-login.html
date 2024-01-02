@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Staff Login</title>
+
+        <link rel="stylesheet" type="text/css" href="css/staff-login.css">
+    </head>
+    <body>
+        <div class="home"><a href="login.html"><img src="img/back.png"></a></div>
+        <div class="container">
+            
+            <div class="title">
+               <span> Staff Login</span>
+            </div>
+            <form><table>
+                <tr>
+                    <td>
+                        <span>
+                            Staff ID 
+                        </span> 
+                    </td>
+                    <td>
+                        <input type="text" id="uid">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Password  </span>
+                    </td>
+                    <td>
+                        <input type="password" id="pwd"><br>
+                    </td>
+                </tr>
+            </table>
+                
+                
+                
+            
+                <button type="button" id="login-btn" class="login-btn" onclick="login()">
+                   
+                        
+                        <span id="ll">
+                            Login
+                        </span>
+
+                    
+                    </button>
+                       
+                    
+            </form>
+
+        </div>
+        <script>
+               
+                
+            function login(){  
+                let UserID="doc01";
+                let pass="12345";
+                let eid = document.getElementById('uid').value;
+                let epwd = document.getElementById('pwd').value; 
+                
+                if(UserID!=eid || pass!=epwd)
+                    {
+                        alert("Staff ID or Password Incorrect.!");
+                    }
+                else if(UserID==eid || pass==epwd){
+                    //alert("Matched..!");
+                    //var k=document.querySelectorAll(".login-btn");
+                    //k[0].innerHTML="<a href=\'staff-dash.html\'.><div id=\'lo\' class=\'lo\' ><span id=\'ll\'>Login</span></div></a>";
+                    window.location="staff-dash.html";
+                }
+            }   
+        </script>
+    </body>
+</html>

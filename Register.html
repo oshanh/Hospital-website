@@ -1,0 +1,257 @@
+<title>
+Register
+</title>
+
+<link rel="stylesheet" type="text/css" href="css/register.css">
+
+
+<!--Default-->
+<link rel="icon" type="image/x-icon" href="img/fav.png">
+<link rel="stylesheet" type="text/css" href="css/header_footer.css"/>
+<!--Default-->
+
+
+</head>
+
+<body>
+
+<!--Header Start-->
+<div class="header">    
+    <div class="logo"><a href="index.html"><img class="logo" src="img/logo.jpg"/></a>
+    </div>
+    
+    <ul>
+        <li class="dropdown"> <a href="login.html">User</a>  
+            <div class="dropdown-content dcl">
+                <a href="Login.html">Login</a>
+                <a href="Register.html">Register</a>
+            
+            </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown"><a href="about.html">About Us</a>
+            <div class="dropdown-content">
+                <a href="centers.html">Our Centers</a>
+                <!--<a href="Locations.html">Locations</a>
+                <a href="awards.html">Awards</a>
+                <a href="annual.html">Annual Reports</a>-->
+            </div>
+        </li>  
+
+
+
+        <li><a href="comments.html">Comments</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li class="dropdown"><a href="services.html">Services</a>
+            <div class="dropdown-content">
+                <a href="packages.html">Packages</a>
+                <a href="LabTests.html">Lab Tests</a>
+            </div>
+        </li>  
+
+        <li class="dropdown"><a>Meet <span id="drpdwn" onclick="drp()">>></span></a>
+            <div class="dropdown-content" id="dropdown-content"  >
+                    <a href="eChanelling.html">eChanelling</a>
+                    <a href="Doctor.html">Doctors</a>
+            </div>
+        </li>  
+        <li class="dropdown"><a href="">Check</a>
+            <div class="dropdown-content">
+                <a href="guess.html">How Healthy </a>
+                <a href="bmi.html">BMI</a>
+            </div>
+        </li> 
+        <li> <a href="index.html">Home</a>  </li>
+        
+        
+    </ul>
+</div>    
+<!--Header End-->
+
+
+<div class="container">
+
+<div class="title">
+Register
+</div>
+
+
+<div class="form">
+    <form>
+<table >
+
+<tr>
+
+<td class=""> Name </td>
+<td> <input type="text" > </td>
+</tr>
+
+
+
+
+
+<tr>
+
+<td> Gender </td>
+<td>
+<input type="radio" name="Gender" id="m"><label for="m">Male</label>
+<input type="radio" name="Gender" id="f"><label for="f">Female</label>
+</td>
+</tr>
+
+
+<tr>
+
+<td>Birthday  </td>
+<td><input type="date" > </td>
+</tr>
+
+
+
+
+<tr>
+
+<td>Age  </td>
+<td><input type="number" > </td>
+</tr>
+
+
+<tr>
+
+<td> Address </td>
+<td> <textarea></textarea> </td>
+
+</tr>
+
+
+<tr>
+
+<td>NIC Number  </td>
+<td><input type="text" maxlength="12" required> </td>
+</tr>
+
+
+<tr>
+
+<td> Phone Number </td>
+<td><input type="text" maxlength="10" required></td>
+
+</tr>
+
+<tr>
+
+<td> E-mail </td>
+<td><input type="email" ></td>
+
+</tr>
+
+<tr>
+
+<td> Create a Password </td>
+<td><input type="password" id="pass1" required></td>
+
+</tr>
+
+<tr>
+
+<td> Re-Enter Password </td>
+<td><input type="password" id="pass2" required></td>
+
+</tr>
+
+
+</table>
+
+</div>
+
+
+
+
+
+<div class="register_button">
+
+<button type="submit" onclick="msg()"><span>Submit</span></button>
+
+</div>
+</form>
+</div>
+
+<!--Footer-->
+<footer>
+	<div class="footer">
+
+
+
+	<div class="qlinks"> 
+		<h3>Quick Links</h3>
+		<a href="index.html">Home</a>
+		<a href="echannelling.html">eChanelling </a>
+		<a href="contact.html">Contact</a>
+		<a href="about.html">About</a>
+		<a href="Login.html">Login </a>
+		<a href="Register.html">Register</a>
+		<a href="doctor.html">Doctors</a><br>
+		<a href="packages.html"> Packages</a>
+		<a href="LabTests.html"> LabTests</a>
+		<a href="comments.html"> Comments</a>
+		<a href="centers.html"> Centers</a>
+		
+		<br>
+	</div>
+	<div class="copyright">
+			&copy; YouHeal Hospitals 2023
+	</div>
+	</div>
+</footer>
+<!--Footer End-->
+
+
+<script>
+	function msg(){
+		
+            var pass1=document.getElementById('pass1').value;
+    var pass2=document.getElementById('pass2').value;
+    if(pass1!=pass2){
+        alert("Passwords doesn't match ");
+    }
+    else{
+       // alert('Registration Successfull...!');    
+	}
+}
+    
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

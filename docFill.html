@@ -1,0 +1,130 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Doctors Only</title>
+<link rel="icon" type="image/x-icon" href="img/fav.png">
+<link rel="stylesheet" href="css/docFill.css">
+</head>
+<body>
+<script src="js/docFill.js"></script>
+<h2 id="cen1">Patient Diagnosis </h2>
+<h2><pre id="cen2">DOCTORS ONLY</pre><h2>
+
+<div id="blueBorder">
+<form>
+<table>
+<tr>
+<td class="bor1"><label for="pid">Paient id : &#160;&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
+<td><input type="text" id="pid">
+</table>
+
+<table>
+<tr>
+<td><label class="bor1" for="pn">Paient Full Name :
+<td><input type="text" id="pn">
+</table>
+
+<table>
+<tr>
+<td class="bor1"><label for="pa">Paient age : &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160
+<td><input type="text" id="pa">
+</table>
+
+
+<table>
+<tr>
+<td class="bor1"><label for="de">diagnosis examination : </td>
+</table>
+
+<table>
+<tr>
+<textarea  id="de" rows="4" cols="50"></textarea>
+
+</table>
+<table style="width:600px;">
+<tr>
+<td class="bor1"><label for="sm1">Medcine Catgory (i)</label></td>
+<td class="bor1"><label for="sm1">Medcine Catgory (ii)</label></td>
+<td class="bor1"><label for="sm1">Medcine Catgory (iii) </label></td>
+</tr>
+
+<tr class="selection" >
+    <td ><select id="m1">
+            <option value="Dabrafenib" >Dabrafenib</option>
+            <option value="Altretamine" >Altretamine</option>
+            <option value="Trametinib" >Trametinib</option>
+            <option value="Carboplatin" >Carboplatin</option>
+         </select>
+    </td>        
+                
+<td><select id="m2">
+        <option value="Noradrenergic " >Noradrenergic </option>
+        <option value="DP reuptake" >DP reuptake</option>
+        <option value="5-HT1A receptor " >5-HT1A receptor </option>
+        <option value="Cisplatin" >Cisplatin</option>
+    </select>
+</td>    
+
+<td><select id="m3">
+        <option value="Risperidone" >Risperidone</option>
+        <option value="Quetiapine" >Quetiapine</option>
+        <option value="Olanzapine" >Olanzapine</option>
+        <option value="Aripiprazole" >Aripiprazole</option>
+    </select>
+</td>
+</tr>        
+
+</table>
+
+
+<table>
+
+<tr>
+<td><input class=btn type="button" onclick="med()" value="Select Medcine">
+</table>
+
+<table style="width:400px;height:150px;">
+    <tr>
+        <td><p class="bor1" id="medone">Catogary &#160&#160(i)</p></td>
+        <td><input type="number" id="medi" min="1" max="1000">  mg</td>
+    </tr>    
+
+    <tr>
+        <td><p class="bor1" id="medtwo">&#160Catogary (ii)</p></td>
+        <td><input type="number" id="medii" min="1" max="1000">  mg</td>
+    </tr>    
+
+    <tr>
+        <td><p class="bor1" id="medt">Catogary (iii)</p></td>
+        <td><input type="number" id="mediii" min="1" max="1000" required >  mg</td>
+    </tr>    
+            
+</table>
+
+<table>
+    <tr>
+        <td><input class="btn" type="button" onclick="pay()" value="Calculate Medical bill"></td>
+    </tr>    
+
+</table>
+
+<table style="margin-left:250px; height:1px; background-color:rgb(119, 236, 119)">
+<tr>
+
+    <td><h2 style="text-align:regiht;"><sub>RS.</sub></h2></td>   
+    <td><h1 style="text-align:center; " id="billpay">0000</td>   
+    <td><h2 style="text-align:regiht; "><sub>.00</sub></h2></td>   
+</tr>    
+     
+</table>
+
+</form>
+
+</div>
+
+
+
+
+
+</body>
+</html>

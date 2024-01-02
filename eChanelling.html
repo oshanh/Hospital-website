@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Channelling</title>
+<!--Default-->
+<link rel="icon" type="image/x-icon" href="img/fav.png">
+<link rel="stylesheet" type="text/css" href="css/header_footer.css"/>
+<!--Default-->	
+<link rel="stylesheet" type="text/css" href="css/echanelling.css"/>
+<link rel="stylesheet" type="text/css" href="css/doctor_profile1.css"/>
+
+</head>
+
+<body class="body">
+<!--Header Start-->
+<div class="header">    
+  <div class="logo"><a href="index.html"><img class="logo" src="img/logo.jpg"/></a>
+  </div>
+  
+  <ul>
+      <li class="dropdown"> <a href="login.html">User</a>  
+          <div class="dropdown-content dcl">
+              <a href="Login.html">Login</a>
+              <a href="Register.html">Register</a>
+          
+          </div>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="dropdown"><a href="">About Us</a>
+          <div class="dropdown-content">
+              <a href="centers.html">Our Centers</a>
+              <a href="Locations.html">Locations</a>
+              <a href="vision.html">Vision</a>
+              <a href="mission.html">Mission</a>
+          </div>
+      </li>  
+
+
+
+      <li><a href="comments.html">Comments</a></li>
+      <li><a href="payments.html">Payments</a></li>
+      <li class="dropdown"><a href="">Services</a>
+          <div class="dropdown-content">
+              <a href="packages.html">Packages</a>
+              <a href="LabTests.html">Lab Tests</a>
+          </div>
+      </li>  
+
+      <li class="dropdown"><a href="">Meet </a>
+          <div class="dropdown-content">
+                  <a href="eChanelling.html">eChanelling</a>
+                  <a href="Doctor.html">Doctors</a>
+          </div>
+      </li>  
+      <li class="dropdown"><a href="">Check</a>
+        <div class="dropdown-content">
+            <a href="guess.html">How Healthy </a>
+            <a href="bmi.html">BMI</a>
+        </div>
+    </li> 
+      <li> <a href="index.html">Home</a>  </li>
+      <li></li>
+      
+  </ul>
+</div>    
+<!--Header End-->
+
+<div id="container">
+  <form id="channel_form">
+	  <h1 class="cd">Channel Doctors</h1>
+	  <p class="p1"><b>
+	  Doctor Name    <br>  <input type="text" id="dc" class="input" placeholder="Enter doctor name"/> <br><br>
+	  Specialization <br>  <!--<input type="text" id="spec"  class="input" placeholder="Select specialization"/> <br><br>-->
+	  <select id="speciality" class="input" name="specializationId">
+                                           <option value="" id="speciality">Select Specialty</option>
+                                              
+                                                <option value="pysician" >Physician</option>
+                                                <option value="surgeon" >Surgeon</option>
+                                                <option value="neurologist" >Neurologist</option>
+                                          
+
+                                                <div>
+                                              <option value="3" >Allergy Specialist</option>
+                                               <option value="72" >Allergy And Immunology</option>
+                                           
+                                               <option value="105" >Allergy Specialist</option>
+                                           
+                                               <option value="164" >Applied Psychologist</option>
+                                           
+                                               <option value="766" >Breast And Cancer Surgeon</option>
+                                           
+                                               <option value="58" >Cardiac Electrophysiologist</option>
+                                           
+                                               <option value="706" >Cardiac Respiratory Unit</option>
+                                           
+                                               <option value="35" >Cardiaothoracic Surgeon</option>
+                                           
+                                               <option value="01" >Cardiologist</option>
+                                           
+                                               <option value="166" >Cardiologist And Cardiac Electrophysiologist</option>
+                                           
+                                               <option value="111" >Chest Physician</option>
+                                           
+                                               <option value="02" >Chest Specialist</option>
+                                           
+                                               <option value="417" >Child And Adolescent Phychiatrist</option>
+                                           
+                                               <option value="179" >Child And Adolescent Phychiatrist</option>
+                                           
+                                               <option value="495" >Clinical Nutritionist</option>
+                                           
+                                               <option value="1070" >Community Dentistry</option>
+                                           
+                                               <option value="452" >Consultant Cardiologist</option>
+                                           
+                                               <option value="1098" >Consultant In Subfertility And Gynaecology</option>
+                                           
+                                               <option value="1100" >Cosmetic Skincare</option>
+                                           
+                                               <option value="830" >Counsellor Psychological</option>
+                                           
+                                               <option value="770" >Critical Care Physician(Consultant Intensivist)</option>
+                                           
+                                               <option value="648" >Dental  Oral And Maxillofacial Surgeon</option>
+                                           
+                                               <option value="32" >Dental Surgeon</option>
+                                           
+                                               <option value="168" >Dental Surgeon  Restorative Dentistry</option>
+                                           
+                                               <option value="04" >Dermatologist</option>
+                                           
+                                               <option value="05" >Dietician</option>
+                                           
+                                               <option value="45" >Dietician And Nutrician</option>
+                                           
+                                               <option value="151" >Endocrinologist</option>
+                                           
+                                               <option value="06" >Endocrinologist And Diabetologist</option>
+                                           
+                                               <option value="07" >Ent Surgeon</option>
+                                           
+                                               <option value="08" >Eye Surgeon</option>
+                                           
+                                               <option value="84" >Gastroenterological Surgeon</option>
+                                           
+                                               <option value="156" >Gastroenterologist</option>
+                                           
+                                               <option value="131" >Gastroenterologist And Hepatobiliary Surgeon</option>
+                                           
+                                               <option value="48" >Gastrointestinal Surgeon</option>
+                                           
+                                               <option value="752" >General And Colorectal Surgeon</option>
+                                           
+                                               <option value="959" >General And Hepatobiliary Surgeon</option>
+                                           
+                                               <option value="126" >General Physician</option>
+                                           
+                                               <option value="343" >General Physician And Geriatric Physician</option>
+                                           
+                                               <option value="422" >General Surgeon</option>
+                                           
+                                               <option value="10" >Genito Urinary Surgeon</option>
+                                           
+                                               <option value="853" >Genito-Urinary Surgeon(Urologist)</option>
+                                           
+                                               <option value="472" >Geriatrician And Elderly Care Specialist</option>
+                                           
+                                               <option value="11" >Gynaecologist</option>
+                                           
+                                               <option value="429" >Gynaecologist  And Cancer Surgeon</option>
+                                           
+                                               <option value="38" >Gynaecologist And Consultant In Fertility</option>
+                                           
+                                               <option value="826" >Gynaecologist In Subfertility</option>
+                                           
+                                               <option value="172" >Haemato Oncologist</option>
+                                           
+                                               <option value="12" >Haematologist</option>
+                                           
+                                               <option value="699" >Hydrotherapy And Rehabilitation Therapist</option>
+                                           
+                                               <option value="976" >Interventional Radiologist</option>
+                                           
+                                               <option value="112" >Liver Centre</option>
+                                           
+                                               <option value="66" >Medical Gastroenterologist</option>
+                                           
+                                               <option value="97" >Medical Officer</option>
+                                           
+                                               <option value="46" >Memory Clinic</option>
+                                           
+                                               <option value="851" >Nawaloka Opd Live Doctor</option>
+                                           
+                                               <option value="229" >Neonatologist</option>
+                                           
+                                               <option value="31" >Nephrologist</option>
+                                           
+                                               <option value="14" >Neuro Physician</option>
+                                           
+                                               <option value="13" >Neuro Surgeon</option>
+                                           
+                                               <option value="206" >Neurologist</option>
+                                           
+                                               <option value="39" >Nutritionist</option>
+                                           
+                                               <option value="159" >Obstetrician And Gynaecologist</option>
+                                           
+                                               <option value="50" >Occupational Therapist</option>
+                                           
+                                               <option value="91" >Oncological Surgeon</option>
+                                           
+                                               <option value="130" >Oncologist</option>
+                                           
+                                               <option value="03" >Oncologist And Cancer Specialist</option>
+                                           
+                                               <option value="28" >Oral And Maxillofacial Surgeon</option>
+                                           
+                                               <option value="42" >Orthodontist</option>
+                                           
+                                               <option value="15" >Orthopaedic Surgeon</option>
+                                           
+                                               <option value="355" >Paediatric And Adolescents Oncologist</option>
+                                           
+                                               <option value="89" >Paediatric Cardiologist</option>
+                                           
+                                               <option value="169" >Paediatric Cardiothoracic Surgeon</option>
+                                           
+                                               <option value="502" >Paediatric Chest Physician</option>
+                                           
+                                               <option value="604" >Paediatric Dentist</option>
+                                           
+                                               <option value="53" >Paediatric Dermatologist</option>
+                                           
+                                               <option value="180" >Paediatric Endocrinologist</option>
+                                           
+                                               <option value="338" >Paediatric Eye Surgeon</option>
+                                           
+                                               <option value="88" >Paediatric Nephrologist</option>
+                                           
+                                               <option value="94" >Paediatric Neurologist</option>
+                                           
+                                               <option value="137" >Paediatric Oncologist</option>
+                                           
+                                               <option value="482" >Paediatric Physiotherapist</option>
+                                           
+                                               <option value="17" >Paediatric Surgeon</option>
+                                           
+                                               <option value="16" >Paediatrician</option>
+                                           
+                                               <option value="143" >Paediatrician And Neonatal Paediatrician</option>
+                                           
+                                               <option value="630" >Paediatrician/Paediatric Gastroenterologist</option>
+                                           
+                                               <option value="78" >Pain Management</option>
+                                           
+                                               <option value="856" >Pcr Test</option>
+                                           
+                                               <option value="942" >Periodontist & Consultant In Restorative Dentistry</option>
+                                           
+                                               <option value="18" >Physician</option>
+                                           
+                                               <option value="65" >Physician  And Endocrinologists/Diabetologist</option>
+                                           
+                                               <option value="448" >Physician And Diabetologist</option>
+                                           
+                                               <option value="93" >Physician And Endocrinologist</option>
+                                           
+                                               <option value="767" >Physician-Emergency Clinic</option>
+                                           
+                                               <option value="649" >Physician-Special Clinic</option>
+                                           
+                                               <option value="34" >Physiotherapist</option>
+                                           
+                                               <option value="161" >Plastic And Reconstructive Surgeon</option>
+                                           
+                                               <option value="19" >Plastic Surgeon</option>
+                                           
+                                               <option value="20" >Psychiatrist</option>
+                                           
+                                               <option value="1044" >Psychiatrist Counsellor</option>
+                                           
+                                               <option value="36" >Psychologist</option>
+                                           
+                                               <option value="33" >Radiologists</option>
+                                           
+                                               <option value="201" >Respiratory Physician</option>
+                                           
+                                               <option value="21" >Rheumatologist</option>
+                                           
+                                               <option value="24" >S.T.D</option>
+                                           
+                                               <option value="262" >Skin Care And Cosmetic - Consultant Dermatologist</option>
+                                           
+                                               <option value="281" >Skin Care And Cosmetic Centre - Plastic Surgeon</option>
+                                           
+                                               <option value="106" >Speech And Language Therapist</option>
+                                           
+                                               <option value="75" >Speech Language Pathalogist And Audiologist</option>
+                                           
+                                               <option value="461" >Speech Pathologist / Clinical Audiologist</option>
+                                           
+                                               <option value="40" >Speech Pathologist And Therapist</option>
+                                           
+                                               <option value="22" >Speech Therapist</option>
+                                           
+                                               <option value="23" >Sports Medicine</option>
+                                           
+                                               <option value="908" >Sports Medicine - 1 Hour Exercise Session</option>
+                                           
+                                               <option value="318" >Sub Fertility</option>
+                                           
+                                               <option value="26" >Surgeon</option>
+                                           
+                                               <option value="25" >Thoracic Surgeon</option>
+                                           
+                                               <option value="134" >Transfusion Physician</option>
+                                           
+                                               <option value="388" >Transplant Surgeon</option>
+                                           
+                                               <option value="125" >Urological And Transplant Surgeon</option>
+                                           
+                                               <option value="200" >Urological Surgeon</option>
+                                           
+                                               <option value="27" >Urologist</option>
+                                           
+                                               <option value="128" >Vascular And Transplant Surgeon</option>
+                                           
+                                               <option value="49" >Vascular Surgeon</option>
+                                           
+                                               <option value="666" >Venereologist</option>
+                                           
+                                               <option value="470" >Venereologist/S.T.D</option>
+                                                </div>       
+
+                                       </select>
+	
+	  <br>
+	  <br>
+	  Date           
+	  <br> 
+	  <input type="date" id="date" class="input" min=""/> 
+	  </b></p>
+	  <br>
+    
+	  <button type="button" id="Clear_b" class="reset b"  onclick="c()">
+      Clear
+    </button>
+
+    <button type="button" id="Search_b" class="search b" onclick="display()">
+        Search
+    </button>
+	
+  </form>
+</div>
+
+<div id="cont" class="cont" style="display:flex;">
+    
+  <section id="pysician-section">
+        <div id="pysician" class="pysician" style="display:none;">
+          <img src="img/doctor_dp_default.jpg" alt="P_P" id="i"/>
+          <div id="second">
+            <h4>Dr.Achini Dharmarathne<br>- Video Consultation</h4>
+            <p><small>Pysician</small></p>
+            
+          </div>
+          
+          <button type="button" id="b1" onclick="f()">Channel</button>
+          <br><br>
+            <button id="b2">View Profile</button>
+          
+          
+        </div>
+
+        <div id="card" class="pysician" style="display:none;">
+          <img src="img/doctor_dp_default.jpg" alt="P_P" id="i"/>
+          <div id="second">
+            <h4>Dr.Amal Fernando<br>- Consultant</h4>
+            <p><small>Pysician</small></p>
+            
+          </div>
+          
+          <button id="b1">Channel</button>
+          <br><br>
+            <button id="b2">View Profile</button>
+          
+          
+        </div>
+
+        <div id="card" class="pysician" style="display:none;">
+          <img src="img/doctor_dp_default.jpg" alt="P_P" id="i"/>
+          <div id="second">
+            <h4>Dr.Namal Kumara<br>Consultation</h4>
+            <p><small>Physician</small></p>
+            
+          </div>
+          
+          <button id="b1">Channel</button>
+          <br><br>
+            <button id="b2">View Profile</button>
+          
+          
+        </div>
+
+        <div id="card" class="pysician" style="display:none;" >
+          <img src="img/doctor_dp_default.jpg" alt="P_P" id="i"/>
+          <div id="second">
+            <h4>Dr.Kanthi Bandara<br>- Video Consultation</h4>
+            <p><small>Pysician</small></p>
+            
+          </div>
+          
+          <button id="b1">Channel</button>
+          <br><br>
+            <button id="b2">View Profile</button>
+      
+  
+ 
+      </div>
+  </section>        
+  
+  <section id="neurologist-section">
+      <div id="card" class="neurologist" style="display:none;" >
+        <img src="img/doctor_dp_default.jpg" alt="P_P" id="i"/>
+        <div id="second">
+          <h4>Prof.Nilantha Jayasuriya<br>Consultation</h4>
+          <p><small>Neurologist</small></p>
+          
+        </div>
+        
+        <button id="b1">Channel</button>
+        <br><br>
+          <button id="b2">View Profile</button>
+        
+        
+      </div>
+      <div id="card" class="neurologist" style="display:none;" >
+        <img src="img/doctor_dp_default.jpg" alt="P_P" id="i"/>
+        <div id="second">
+          <h4>Prof.Nilantha Jayasuriya<br>Consultation</h4>
+          <p><small>Neurologist</small></p>
+          
+        </div>
+        
+        <button id="b1">Channel</button>
+        <br><br>
+          <button id="b2">View Profile</button>
+        
+        
+      </div>
+      <div id="card" class="neurologist" style="display:none;" >
+        <img src="img/doctor_dp_default.jpg" alt="P_P" id="i"/>
+        <div id="second">
+          <h4>Prof.Nilantha Jayasuriya<br>Consultation</h4>
+          <p><small>Neurologist</small></p>
+          
+        </div>
+        
+        <button id="b1">Channel</button>
+        <br><br>
+          <button id="b2">View Profile</button>
+        
+        
+      </div>
+      <div id="card" class="neurologist" style="display:none;" >
+        <img src="img/doctor_dp_default.jpg" alt="P_P" id="i"/>
+        <div id="second">
+          <h4>Prof.Nilantha Jayasuriya<br>Consultation</h4>
+          <p><small>Neurologist</small></p>
+          
+        </div>
+        
+        <button id="b1">Channel</button>
+        <br><br>
+          <button id="b2">View Profile</button>
+        
+        
+      </div>
+      <div id="card" class="neurologist" style="display:none;" >
+        <img src="img/doctor_dp_default.jpg" alt="P_P" id="i"/>
+        <div id="second">
+          <h4>Prof.Nilantha Jayasuriya<br>Consultation</h4>
+          <p><small>Neurologist</small></p>
+          
+        </div>
+        
+        <button id="b1">Channel</button>
+        <br><br>
+          <button id="b2">View Profile</button>
+        
+        
+      </div>
+      <div id="card" class="neurologist" style="display:none;" >
+        <img src="img/doctor_dp_default.jpg" alt="P_P" id="i"/>
+        <div id="second">
+          <h4>Prof.Nilantha Jayasuriya<br>Consultation</h4>
+          <p><small>Neurologist</small></p>
+          
+        </div>
+        
+        <button id="b1">Channel</button>
+        <br><br>
+          <button id="b2">View Profile</button>
+        
+        
+      </div>
+  </section>
+
+  <section id="surgeon-section">
+    <div id="card" class="surgeon" style="display:none;" >
+      <img src="img/doctor_dp_default.jpg" alt="P_P" id="i"/>
+      <div id="second">
+        <h4>Prof.Nilantha Jayasuriya<br>Consultation</h4>
+        <p><small>Neurologist</small></p>
+        
+      </div>
+      
+      <button id="b1">Channel</button>
+      <br><br>
+        <button id="b2">View Profile</button>
+      
+      
+    </div>
+    <div id="card" class="surgeon" style="display:none;" >
+      <img src="img/doctor_dp_default.jpg" alt="P_P" id="i"/>
+      <div id="second">
+        <h4>Prof.Nilantha Jayasuriya<br>Consultation</h4>
+        <p><small>Neurologist</small></p>
+        
+      </div>
+      
+      <button id="b1">Channel</button>
+      <br><br>
+        <button id="b2">View Profile</button>
+      
+      
+    </div>
+  </section>  
+   
+  <section id="surgeon-section">
+    <div id="card" class="surgeon" style="display:none;" >
+      <img src="img/doctor_dp_default.jpg" alt="P_P" id="i"/>
+      <div id="second">
+        <h4>Prof.Nilantha Jayasuriya<br>Consultation</h4>
+        <p><small>Neurologist</small></p>
+        
+      </div>
+      
+      <button id="b1">Channel</button>
+      <br><br>
+        <button id="b2">View Profile</button>
+      
+      
+    </div>
+    <div id="card" class="surgeon" style="display:none;" >
+      <img src="img/doctor_dp_default.jpg" alt="P_P" id="i"/>
+      <div id="second">
+        <h4>Prof.Nilantha Jayasuriya<br>Consultation</h4>
+        <p><small>Neurologist</small></p>
+        
+      </div>
+      
+      <button id="b1">Channel</button>
+      <br><br>
+        <button id="b2">View Profile</button>
+      
+      
+    </div>
+  </section>  
+    
+</div>
+
+<!--Footer-->
+<footer>
+  <div class="footer">
+
+
+
+  <div class="qlinks"> 
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="echannelling.html">eChanelling </a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="Login.html">Login </a>
+      <a href="Register.html">Register</a>
+      <a href="doctor.html">Doctors</a><br>
+      <a href="packages.html"> Packages</a>
+      <a href="LabTests.html"> LabTests</a>
+      <a href="comments.html"> Comments</a>
+      <a href="centers.html"> Centers</a>
+      
+      <br>
+  </div>
+  <div class="copyright">
+          @YouHeal Hospitals 2023
+  </div>
+  </div>
+</footer>
+<!--Footer End-->
+
+<script>
+   var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth() + 1; //January is 0!
+var yyyy = today.getFullYear();
+
+if (dd < 10) {
+   dd = '0' + dd;
+}
+
+if (mm < 10) {
+   mm = '0' + mm;
+} 
+    
+today = yyyy + '-' + mm + '-' + dd;
+document.getElementById("date").setAttribute("min", today);
+      
+      function display(){
+        
+        let speciality=document.getElementById('speciality').value;
+        
+        const x=document.getElementsByClassName(speciality);
+        
+        for (i=0;i<=x.length;i++){
+          x[i].style.display="";
+        }
+        
+
+      }
+
+      function c(){
+        
+        let speciality=document.getElementById('speciality').value;
+        
+        const x=document.getElementsByClassName(speciality);
+        
+        for (i=0;i<=x.length;i++){
+          x[i].style.display="none";
+        }
+      }
+</script>
+</body>
+</html>

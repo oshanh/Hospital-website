@@ -1,0 +1,95 @@
+
+.package_list {
+    margin: 10px 100px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    font-family: sans-serif;
+}
+
+.card{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+}
+
+.card_text h3{
+    text-decoration: none;
+    color: #90EE90;
+  }
+  
+  .card_text p{
+    color: gray;
+  
+  }
+  .service-item a {
+    text-decoration: none;
+  }
+  .service-item {
+    border: gray ;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .service-item button{
+    border: none;
+    color: white;
+    height: 40px;
+    background-color: #90EE90;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.1s ease-out;
+    font-size: large;
+    margin-bottom: 10px;
+  }
+
+  .service-item button:hover{
+    background-color: #F1C319;
+  }
+
+  .card_img{
+    width: 100%;
+    display: block;
+  }
+
+  .heading_1{
+    color: #F1C319;
+    margin: 25px 100px;
+    font-family: 'Times New Roman', Times, serif, Courier, monospace;
+  }
+
+  .package{
+    margin: auto;
+    color: gray;
+
+  }
+
+  .details{
+    display: flex;
+    font-family: sans-serif;
+    margin: auto 50px;
+  }
+
+  .package_details{
+    float: left;
+    width: 75%;
+    margin-right: 20px;
+
+  }
+
+  .package_contact{
+    float: right;
+
+  }
+
+  .package_contact ul{
+    list-style-type: none;
+
+  }
+  .package_img{
+    margin: 50px;
+  }

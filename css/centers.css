@@ -1,0 +1,30 @@
+.box{
+    width:170px;
+    height:230px;
+    border:1px solid red;
+    color:white;
+    font-size:20px;
+    margin:auto;
+    text-align: left;
+    padding:15px;
+}
+.container{
+    overflow: hidden;
+    display:flex;
+    flex-wrap:wrap;
+    padding:55px;
+    animation:slide 2s;
+    animation-fill-mode:forwards;
+    
+}
+
+@keyframes slide{
+    0%{
+        opacity:0;
+        transform:translateY(-100%);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(10%);
+    }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="css/payments.css">
+    
+<!--Default-->
+<link rel="icon" type="image/x-icon" href="img/fav.png">
+<link rel="stylesheet" type="text/css" href="css/header_footer.css"/>
+<!--Default-->
+
+<title>Online Payments</title>
+    </head>
+    <body >
+
+<!--Header Start-->
+<div class="header">    
+    <div class="logo"><a href="index.html"><img class="logo" src="img/logo.jpg"/></a>
+    </div>
+    
+    <ul>
+        <li class="dropdown"> <a href="login.html">User</a>  
+            <div class="dropdown-content dcl">
+                <a href="Login.html">Login</a>
+                <a href="Register.html">Register</a>
+            
+            </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown"><a href="about.html">About Us</a>
+            <div class="dropdown-content">
+                <a href="centers.html">Our Centers</a>
+                <!--<a href="Locations.html">Locations</a>
+                <a href="awards.html">Awards</a>
+                <a href="annual.html">Annual Reports</a>-->
+            </div>
+        </li>  
+
+
+
+        <li><a href="comments.html">Comments</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li class="dropdown"><a href="">Services</a>
+            <div class="dropdown-content">
+                <a href="packages.html">Packages</a>
+                <a href="LabTests.html">Lab Tests</a>
+            </div>
+        </li>  
+
+        <li class="dropdown"><a>Meet <span id="drpdwn" onclick="drp()">>></span></a>
+            <div class="dropdown-content" id="dropdown-content"  >
+                    <a href="eChanelling.html">eChanelling</a>
+                    <a href="Doctor.html">Doctors</a>
+            </div>
+        </li>  
+        <li class="dropdown"><a href="">Check</a>
+            <div class="dropdown-content">
+                <a href="guess.html">How Healthy </a>
+                <a href="bmi.html">BMI</a>
+            </div>
+        </li> 
+        <li> <a href="index.html">Home</a>  </li>
+        
+        
+    </ul>
+</div>    
+<!--Header End-->
+
+<div class="bdymargn" >
+    <h2 class="cen1">Online Bill Payment</h2>
+    <a href="index.html" title="home page">
+    <h3  class="text1 mouse">YouHeal Hospital</h3><br></a>
+    
+
+    <!-- <div id="container2"> -->
+        <div id="blueBorder">
+        <form>
+        
+        <table >
+        <tr>
+        <td><p class="bor1" >&#160 Payment Type:</p>
+        <tr>
+        <td><input type="radio" name="pay" id ="pay1" >
+        <label for="pay1">In patient payment</label>
+       
+        <td><input type="radio" name="pay" id ="pay2" >
+        <label for="pay2">Out patient payment</label>
+       
+        <td><input type="radio" name="pay" id ="pay3" >
+        <label for="pay3">Quotation payment</label>
+        </table>
+        <table>
+        <tr>
+        <td><lable for="pid" class="bor1" >&#160Patient ID :&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160</lable>
+        <td><input  type="text" id="pid" placeholder="6978WQ" required>
+        <!-- <i class="fa fa-envolope icon"></i> -->
+        </table>
+        <table>
+        <tr>
+        <td><lable class="bor1"  for="fname" >&#160Patient First Name :</lable>
+        <td><input type="text" id="fname">
+        </table>
+        <table>
+        <tr>
+        <td><lable class="bor1" for="lname" >&#160Patient Last Name :</lable>
+        <td><input type="text" id="lname">
+        </table>
+        <table>
+        <tr>
+        <td><lable class="bor1" for="rs" >&#160Amount (Rs.) :&#160&#160&#160&#160&#160&#160&#160&#160&#160</lable>
+        <td><input type="text" id="rs" >
+        </table>
+        
+        <table>
+        <tr>
+            <td><p class="bor1">&#160Payment Method</p>
+                </td>
+        </tr>  
+
+        <tr class="label" >
+            <td><input class="other1" type="radio" name="paymentMethod" id ="VISA" >
+                <label  class="label" for="VISA">
+                    <img class="forPotos " src="img/png/visa.png">
+                </label>
+            </td>     
+            <td><input class="other1" type="radio" name="paymentMethod" id ="MASTER" >
+                <label  class="label" for="MASTER">
+                    <img class="forPotos " src="img/png/master.png">
+                </label>
+            </td>
+            <td><input class="other1" type="radio" name="paymentMethod" id ="AMEX" >
+            
+                <label  class="label" for="AMEX">
+                    <img class="forPotos " src="img/png/amex.png">
+                </label>
+            </td>
+            <td><input class="other1" type="radio" name="paymentMethod" id ="BITCOIN" >
+                <label  class="label" for="BITCOIN">
+                    <img class="forPotos " src="img/png/bitcoin.png">
+                </label>
+            </td>
+            <td><input class="other1" type="radio" name="paymentMethod" id ="paypal" >
+                <label  class="label" for="paypal">
+                    <img class="forPotos " src="img/png/paypal.png">
+                </label>
+            </td>
+        </tr>        
+        
+
+
+        </table>
+        <div>
+        <table>
+        <br>
+        <tr>
+        <td><input class="btn" type="submit" value="Pay" id="pay-btn">
+        </table>
+        </div>
+        </form>
+        </div>
+        <!-- </div> -->
+        </div>
+
+<!--Footer-->
+<footer>
+    <div class="footer">
+
+
+
+    <div class="qlinks"> 
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="echannelling.html">eChanelling </a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="Login.html">Login </a>
+        <a href="Register.html">Register</a>
+        <a href="doctor.html">Doctors</a><br>
+        <a href="packages.html"> Packages</a>
+        <a href="LabTests.html"> LabTests</a>
+        <a href="comments.html"> Comments</a>
+        <a href="centers.html"> Centers</a>
+        
+        <br>
+    </div>
+    <div class="copyright">
+            @YouHeal Hospitals 2023
+    </div>
+    </div>
+</footer>
+<!--Footer End-->
+
+    </body>
+
+</html>

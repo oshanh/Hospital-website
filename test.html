@@ -1,0 +1,94 @@
+ <html> 
+    
+ <head>
+   <style>
+    *{box-sizing: border-box;}
+
+    body{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      margin:0;
+      overflow-x:hidden;
+    }
+    .box{
+      background-color: greenyellow;
+      color:#000;
+      width:300px;
+      height:150px;
+      margin:10px;
+      border:1px solid red;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      transform:translateX(100%);
+      transition:transform 1s ease;
+
+
+    }
+
+    .box:nth-of-type(even){
+      transform:translateX(-100%);
+
+    }
+    .box.show{
+      transform:translateX(0);
+
+    }
+
+    .box h2{
+
+    }
+   </style>
+ </head>
+  <body>
+    <h1>Onscroll Animation</h1>
+  
+<div class="box"><h2>box 1</h2></div>
+<div class="box"><h2>box 2</h2></div>
+<div class="box"><h2>box 3</h2></div>
+<div class="box"><h2>box 4</h2></div>
+<div class="box"><h2>box 5</h2></div>
+<div class="box"><h2>box 1</h2></div>
+<div class="box"><h2>box 2</h2></div>
+<div class="box"><h2>box 3</h2></div>
+<div class="box"><h2>box 4</h2></div>
+<div class="box"><h2>box 5</h2></div>
+<div class="box"><h2>box 1</h2></div>
+<div class="box"><h2>box 2</h2></div>
+<div class="box"><h2>box 3</h2></div>
+<div class="box"><h2>box 4</h2></div>
+<div class="box"><h2>box 5</h2></div>
+<div class="box"><h2>box 2</h2></div>
+<div class="box"><h2>box 3</h2></div>
+<div class="box"><h2>box 4</h2></div>
+<div class="box"><h2>box 5</h2></div>
+<div class="box"><h2>box 1</h2></div>
+<div class="box"><h2>box 2</h2></div>
+<div class="box"><h2>box 3</h2></div>
+
+
+<script>
+  const boxes = document.querySelectorAll('.box')
+  window.addEventListener('scroll',checkboxes)
+  checkboxes()
+  function checkboxes(){
+    const triggerBottom =window.innerHeight / 5*4
+    boxes.forEach(box => {
+      const boxTop = box.getBoundingClientRect().top
+      if(boxTop < triggerBottom){
+        box.classList.add('show')
+      } else {
+        box.classList.remove('show')
+      }
+    })
+  }
+
+
+</script>
+<a></a>
+<a>
+    </body>
+        </html>        
+

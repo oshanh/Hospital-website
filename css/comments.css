@@ -1,0 +1,41 @@
+#myInput{
+    width:300px;
+    height:100px;
+}
+
+.comment-input{
+    border:1px solid black;
+    height:200px;
+    width:300px;
+    padding:0px;
+   
+   
+
+}
+.comment-section{
+    margin:100px;
+    color:white;
+    border:1px solid white;
+    text-align:center;
+}    
+.comment-section p{
+    
+
+}
+input[type=text]{
+   
+    
+}
+input[type=submit]{
+    width:100px;
+    height:40px;
+    margin-left:100px;
+}
+body{
+  color:white;
+  
+}
+
+.container{
+    padding-left:50px;
+}

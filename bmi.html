@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>BMI Calc.</title>
+        <link rel="stylesheet" type="text/css" href="css/bmi.css">
+<!--Default-->
+<link rel="icon" type="image/x-icon" href="img/fav.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Default end-->
+    </head>
+    <body>
+ <!--Header Start
+ <div class="header">    
+    <div class="logo"><a href="index.html"><img class="logo" src="img/logo.jpg"/></a>
+    </div>
+    
+    <ul>
+        <li class="dropdown"> <a href="login.html">User</a>  
+            <div class="dropdown-content dcl">
+                <a href="Login.html">Login</a>
+                <a href="Register.html">Register</a>
+            
+            </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown"><a href="">About Us</a>
+            <div class="dropdown-content">
+                <a href="centers.html">Our Centers</a>
+                <a href="Locations.html">Locations</a>
+                <a href="vision.html">Vision</a>
+                <a href="mission.html">Mission</a>
+            </div>
+        </li>  
+
+
+
+        <li><a href="comments.html">Comments</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li class="dropdown"><a href="">Services</a>
+            <div class="dropdown-content">
+                <a href="packages.html">Packages</a>
+                <a href="LabTests.html">Lab Tests</a>
+            </div>
+        </li>  
+
+        <li class="dropdown"><a href="">Meet </a>
+            <div class="dropdown-content">
+                    <a href="eChanelling.html">eChanelling</a>
+                    <a href="Doctor.html">Doctors</a>
+            </div>
+        </li>  
+
+        <li> <a href="index.html">Home</a>  </li>
+        <li></li>
+        
+    </ul>
+</div>    
+Header End-->       
+    <div class="bg-img">  </div> 
+  
+            <div class="container">
+                <div class="title">
+                    <span>BMI CALCULATOR</span>
+                </div>
+                <div class="hw">    
+                    <span id="txt">Height</span>
+                    <input type="number" id="height">
+                    <select id="height-type" >
+                        <option value="cm">cm</option>
+                        <option value="m">m</option>
+                    </select>
+                    <br>
+                    <span class="txt">Weight</span>
+                    
+                    <input type="number" id="weight">
+                    <select id="weight-type" >
+                        <option value="kg">kg</option>
+                        <option value="g">g</option>
+                    </select>
+
+                    <br>
+                </div>
+                <div class="btn">
+                    <button id="calc_btn" onclick="calc()">Calculate</button>
+                </div>
+                <!--<div class="divider">
+                    <div class="hr">
+                        <hr>
+                    </div>
+                    <div class="divtxt">
+                        <span>Result</span>
+                    </div>
+                    <div class="hr">
+                        <hr>
+                    </div>    
+                </div>    -->
+                <h2 class="divider">Your BMI</h2>
+                
+                <p id="bmi-value" class="bmi"></p>
+                <p id="bmi-comment" class="comment"></p>
+            </div>
+
+
+        <script>
+            function calc(){
+                let height=document.getElementById('height').value;
+                let weight=document.getElementById('weight').value;
+                let height_type=document.getElementById('height-type').value;
+                let weight_type=document.getElementById('weight-type').value;
+                let bmi=weight/(height**2);
+                if (height_type==="m" && weight_type==="kg"){
+                    
+                    bmi=weight/(height**2);
+                  
+                }
+                else if (height_type==="cm" && weight_type==="kg"){
+                    bmi=weight/((height/100)**2);
+                }
+                else if (height_type==="m" && weight_type==="g"){
+                    bmi=(weight/1000)/(height**2);
+                }
+                else if (height_type==="cm" && weight_type==="g"){
+                    bmi=(weight/1000)/((height/100)**2);
+                }
+                let bmir=Math.round(bmi*100)/100;
+                document.getElementById('bmi-value').innerHTML=bmir;
+                if (bmir<18.50){
+                    document.getElementById('bmi-comment').innerHTML="Under Weight";
+                    document.getElementById('bmi-value').style.color="Black";
+
+                }
+                else if(bmir>=18.5 && bmir<25){
+                    document.getElementById('bmi-comment').innerHTML="Normal";
+                    document.getElementById('bmi-value').style.color="green";
+                }  
+                else if(bmir>=25 && bmir<30){
+                    document.getElementById('bmi-comment').innerHTML="Over Weight";
+                    document.getElementById('bmi-value').style.color="#dca900";
+                }
+                else if(bmir>=30 && bmir<35){
+                    document.getElementById('bmi-comment').innerHTML="Obese";
+                    document.getElementById('bmi-value').style.color="orange";
+                }
+                else if(bmir>=35 && bmir<40){
+                    document.getElementById('bmi-comment').innerHTML="Severely Obese";
+                    document.getElementById('bmi-value').style.color="red";
+                }
+                else if(bmir>=40){
+                    document.getElementById('bmi-comment').innerHTML="Morbidly Obese";
+                    document.getElementById('bmi-value').style.color="purple";
+                }
+            }
+        </script>
+  <!--Footer
+<footer>
+    <div class="footer">
+
+
+
+    <div class="qlinks"> 
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="echannelling.html">eChanelling </a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="Login.html">Login </a>
+        <a href="Register.html">Register</a>
+        <a href="doctor.html">Doctors</a><br>
+        <a href="packages.html"> Packages</a>
+        <a href="LabTests.html"> LabTests</a>
+        <a href="comments.html"> Comments</a>
+        <a href="centers.html"> Centers</a>
+        
+        <br>
+    </div>
+    <div class="copyright">
+            @YouHeal Hospitals 2023
+    </div>
+    </div>
+</footer>
+Footer End-->
+ 
+    </body>
+</html>

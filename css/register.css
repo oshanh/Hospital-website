@@ -1,0 +1,64 @@
+.container{
+    width:450px;
+    height:650px;
+    margin:auto;
+    margin-top:35px;
+    
+}
+
+
+.form{
+padding-left:45px;
+background-color:rgba(157, 255, 0, 0.5);
+
+}
+.title{
+    
+font-size:35px;
+padding:10px;
+}
+
+.title,.register_button{
+text-align:center;
+background-color:green;
+
+
+}
+.register_button{
+    border-bottom-right-radius:12px;
+    border-bottom-left-radius: 12px;
+}
+.register_button:hover,.register_button span:hover{
+    cursor:pointer;
+}
+.title{
+    border-top-right-radius:12px;
+    border-top-left-radius: 12px;
+}
+
+table{
+width:370px;
+height:500px;
+
+}
+
+.register_button{
+background-color:green;
+padding:10px;
+
+
+}
+.register_button span{
+    font-size:24px;
+}
+
+a{
+text-decoration:none;
+color:white;
+}
+button{
+width:70px;
+height:40px;
+background-color:green;
+border:none;
+}

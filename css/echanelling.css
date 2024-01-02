@@ -1,0 +1,60 @@
+#container{
+	border:2px solid rgb(56, 230, 50);
+	margin:auto;
+	margin-top:90px;
+	margin-bottom: 45px;
+	width:400px;
+	height:375px;
+	padding-left:45px;
+	padding-right:20px;
+	padding-top:0px;
+	padding-bottom:10px;
+	background-color:rgba(10, 178, 255, 0.5);
+	border-radius:12px;
+	justify-content:center;
+	color:yellow;
+	
+}
+#channel_form{
+	margin-bottom: 45px;
+}
+.input{
+	
+	width:90%;
+}
+
+.body{
+	
+}
+
+.cd{
+	text-align:center;
+	font-size:30px;
+}
+
+.search{
+	float:right;
+}
+.b{
+	border-radius:12px;
+	height:40px;
+	width:90px;
+	cursor:pointer;
+	font-size:20px;
+	
+}
+a.b{
+	text-decoration: none;
+}
+
+.b:hover{
+	background-color:antiquewhite;
+}
+
+.p1{
+	font-size:20px;
+	font-family:"Serif";
+}
+
+
+

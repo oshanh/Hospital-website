@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>YouHeal Hospital</title>
+
+<!--Default-->
+<link rel="icon" type="image/x-icon" href="img/fav.png">
+<link rel="stylesheet" type="text/css" href="css/header_footer.css"/>
+<link rel="stylesheet" type="text/css" href="css/1.css"/>
+<!--Default-->
+
+<link rel="stylesheet" href="css/index.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  
+<!--Header Start-->
+
+<div class="container2">
+    <div class="ball b1">  
+
+    </div>
+    <div class="ball b2">  
+
+    </div>
+    <div class="ball b3">  
+
+    </div>
+    <div class="ball b4">  
+
+    </div>
+
+    <div class="ball b5">  
+        
+    </div>
+    
+</div>
+
+<div class="hotline">
+    <span><marquee> Emergency : 1999 || Hot Line : 1799</marquee></span>
+</div>
+<div class="header">    
+    <div class="logo"><a href="index.html"><img class="logo" src="img/logo.jpg"/></a>
+    </div>
+    
+    <ul>
+        <li class="dropdown"> <a href="login.html">User</a>  
+            <div class="dropdown-content dcl">
+                <a href="Login.html">Login</a>
+                <a href="Register.html">Register</a>
+            
+            </div>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown"><a href="about.html">About Us</a>
+            <div class="dropdown-content">
+                <a href="centers.html">Our Centers</a>
+                <!--<a href="Locations.html">Locations</a>
+                <a href="awards.html">Awards</a>
+                <a href="annual.html">Annual Reports</a>-->
+            </div>
+        </li>  
+
+
+
+        <li><a href="comments.html">Comments</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li class="dropdown"><a href="">Services</a>
+            <div class="dropdown-content">
+                <a href="packages.html">Packages</a>
+                <a href="LabTests.html">Lab Tests</a>
+            </div>
+        </li>  
+
+        <li class="dropdown"><a>Meet <span id="drpdwn" onclick="drp()">>></span></a>
+            <div class="dropdown-content" id="dropdown-content"  >
+                    <a href="eChanelling.html">eChanelling</a>
+                    
+            </div>
+        </li>  
+        <li class="dropdown"><a href="">Check</a>
+            <div class="dropdown-content">
+                <a href="guess.html">How Healthy </a>
+                <a href="bmi.html">BMI</a>
+            </div>
+        </li> 
+        <li> <a href="index.html">Home</a>  </li>
+        
+        
+    </ul>
+</div>    
+<!--Header End-->
+
+
+<!--Body Start-->
+
+<!--Slideshow Start-->
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        
+            <img src="img/slideshow/1.jpg" >
+        
+        </div>
+        
+        <div class="mySlides fade">
+        
+            <img src="img/slideshow/2.jpg" >
+        
+        </div>
+        
+        <div class="mySlides fade">
+        
+            <img src="img/slideshow/3.jpg" >
+        
+        </div>
+        <div class="mySlides fade">
+        
+            <img src="img/slideshow/4.jpg" >
+        
+        </div>
+        <div class="mySlides fade">
+        
+            <img src="img/slideshow/5.jpg" >
+        
+        </div>
+        
+
+        
+    </div>
+        <br>
+        
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); 
+            }
+        
+        
+            
+        </script>      
+       
+
+<!--Slideshow End-->
+
+<!--Round Buttons-->
+        <div class="tools">
+            
+            <div class="toolimage">
+                <div class="ti1">
+                    <a href="payments.html">
+                    <img src="img/paybill.png" ></a>
+                    <br> <span class="tooltxt">Pay Bills</span>
+                </div>
+                
+                <div class="ti1">
+                    <a href="eChanelling.html">
+                    <img src="img/echanneling.png"></a>
+                    <br> <span class="tooltxt">E-Chanelling</span>
+                </div>
+                <div class="ti1">
+                    <a href="contact.html">
+                        <img src="img/contact.png"></a>
+                        <br> <span class="tooltxt">Emergency</span>
+                </div>
+                <div>
+                    <a href="LabTests.html">
+                        <img src="img/laboratory.png"></a>
+                        <br> <span class="tooltxt">LAB</span>
+                </div>
+                <div>
+                    <a href="contact.html">
+                        <img src="img/contact.png"></a>
+                        <br> <span class="tooltxt">Contact</span>
+                </div>
+                
+            </div>
+            
+        </div> 
+<!--Round Buttons-->
+
+<div class="apps-container">
+    <div class="app">
+       <a href="bmi.html" target="_blank">
+         <img src="img/apps/bmi.jpg">
+       </a>
+    </div>
+    
+</div>
+
+        <div class="body">
+            <div class="des1">
+                <h1>A Hospital trusted By Millions</h1>
+                <h2>WELCOME to YouHeal HOSPITAL</h2>
+                <p>YouHeal Hospital commenced operations in Sri Lanka on 7th June 2002, under the brand name of YHeal Hospitals, a part of the chain of YHeal Hospitals founded by the Dr. Aruna Warnakulasooriya in India. As the only purpose built private hospital of its kind in Sri Lanka, YHeal Colombo revolutionised Sri Lanka’s healthcare service, and today under the brand YouHeal Hospitals, we continue to dominate and lead the healthcare sector. Ours is still considered to be the best health care facility in the country.
+
+                    <br><br>In 2012, we celebrated a decade of excellence in healthcare. Over the past decade, YouHeal Hospitals has revolutionized the healthcare industry in Sri Lanka through infrastructure development and advancement of its’ product and services, through sizeable investments, with a view to deliver healthcare that is on par with global developments in medical technology. We also play a critical role in the nation’s strategy to provide to provide world-class medical care whilst balancing the equation of affordability and accessibility for all Sri Lankans. </p>
+            </div> 
+            <div class="des2">
+                <div class="des2_img">
+                    <img src="img/logo.jpg">
+                </div>
+                <div class="des2_txt">
+                    <h1>Why YouHeal Hospital</h1>
+                    <h2>First Premier</h2>
+                    <h3>Multispeciality Hospital</h3>
+                    <p>The entry of YouHeal Hospitals into the state dominated healthcare sector in 2002, 
+                    saw the private health care system take root in Sri Lanka. The launch of the hospital 
+                    and the overwhelming response it received from the people demonstrated a long felt need for 
+                    superior healthcare in a pleasant environment.</p>
+                </div>
+            </div>
+            <div class="des3">
+                <h1>Our Centers</h1>
+                <div class="centers_container">
+                    <div class="centers">
+                        <address>Colombo
+                            9A Street,
+                            Galle Road,
+                            Colombo 7.
+                            +94112546890, +94112546891</address>
+                    </div>
+                    <div class="centers">
+                        <address>Matara
+                            NO.2,<br>
+                            Meddawaththa Road,<br>
+                            Matara.<br>
+                            +94412546890, +94412546891</address>
+                    </div>
+                    <div class="centers">
+                        <address>Galle
+                            NO.15/2,
+                            Colombo Road,
+                            Galle.
+                            +94912546890, +94912546891</address>
+                    </div>
+                    <div class="centers">
+                        <address>Kegalle
+                            Central Street,
+                            Colombo Road,
+                            Kegalle.
+                            +94352546890, +94352546891</address>
+                    </div>
+                    <div class="centers">
+                        <address>Kegalle
+                            Central Street,
+                            Colombo Road,
+                            Kegalle.
+                            +94352546890, +94352546891</address>
+                    </div>
+                    <div class="centers">
+                        <address>Kandy
+                            NO.99,
+                            Gampola Road,
+                            Kandy.
+                            +94812546890, +94812546891</address>
+                    </div>
+                    <div class="centers">
+                        <address>Ampara
+                            2nd Street,
+                            Kalmunai,
+                            Ampara.
+                            +94632546890, +94632546891</address>
+                    </div>
+                </div>
+            </div> 
+            <div class="des4">
+                <h1>Service on your palm</h1>
+                <p>View our medical packages</p>
+                <a href="packages.html">
+                <button type="button" class="des4_btn">View Packages</button></a>
+            </div>  
+            
+            <div class="des2">
+                <div class="des2_img">
+                    <img src="img/no-fear.jpg">
+                </div>
+                <div class="des2_txt">
+                    <h1>Have No Fear</h1>
+                    <h2>We Are<br>Opened to The World</h2>
+                    <p>Affordable Health Care in the island paradise,as good as anywhere in the world,for patients from anywhere in the world.Convalesce in the most beautiful country, on the beaches, on the hills, in the wilderness.</p>
+                </div>
+            </div>
+
+            <div class="des5">
+                <img src="img/map.jpg">
+
+
+            </div>
+
+            <div class="des6">
+                <h1>Main branch</h1>
+                <h3>YouHeal Hospital,Colombo,<br>Sri Lanka</h3>
+                <button class="des6_btn">Get Direction</button>
+            </div>
+
+        </div>
+        
+<!--Body End-->
+
+
+
+<!--Footer-->
+    <footer>
+        <div class="footer">
+    
+
+
+        <div class="qlinks"> 
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="echannelling.html">eChanelling </a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="Login.html">Login </a>
+            <a href="Register.html">Register</a>
+            <a href="doctor.html">Doctors</a><br>
+            <a href="packages.html"> Packages</a>
+            <a href="LabTests.html"> LabTests</a>
+            <a href="comments.html"> Comments</a>
+            <a href="centers.html"> Centers</a>
+            
+            <br>
+        </div>
+        <div class="copyright">
+                @YouHeal Hospitals 2023
+        </div>
+        </div>
+    </footer>
+<!--Footer End-->
+
+
+</body>
+
+</html>
